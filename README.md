@@ -9,7 +9,8 @@ The goal is to have a Dashboard to receive important generic information from th
 
 ## Summary
 1. [Technologies used](#technologies-used)
-2. [Sources](#sources)
+2. [Services](#services)
+3. [Sources](#sources)
 
 ## Technologies used
 
@@ -21,6 +22,23 @@ The goal is to have a Dashboard to receive important generic information from th
 ...[^1]
 ...[^2]
 ...[^3]
+## Services
+This project have to contain 4 Services and 9 Widgets :
+
+* <b>League of Legends</b>
+  * Widget (...)
+  * Widget (...)
+* <b>World of Warcraft</b>
+  * Widget (...)
+  * Widget (...)
+* <b>Steam</b>
+  * Widget (...)
+  * Widget (...)
+* <b>Twitch</b>
+  * Widget (...)
+  * Widget (...)
+  
+<b><em>+1 Widget BONUS</em></b>
 
 ## Sources
 
