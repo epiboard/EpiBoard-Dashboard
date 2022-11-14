@@ -5,12 +5,17 @@
 ## Resume
 This project aims at realising:
 
-The goal is to have a Dashboard to receive important generic information from the user about his games (League of Legends / Wow), with the possibility of optimizing his gameplay via external APIs (OP-GG) thanks to widgets searching and displaying information. The user will have access to content from Stream via the Twitch API.
+The goal is to have a Dashboard to receive important generic information from the user about his games (League of Legends / Wow) and also an english dictionary and a country service to get some informations about words and countries.
 
 ## Summary
 1. [Technologies used](#technologies-used)
 2. [Services](#services)
-3. [Sources](#sources)
+   * [League of Legends](#league-of-legends1)
+   * [Raider IO](#raider-io2)
+   * [Rest countries](#rest-countries3)
+   * [Free dictionary](#free-dictionary4)
+3. [Swagger](#swagger)
+4. [Sources](#sources)
 
 ## Technologies used
 
@@ -19,31 +24,46 @@ The goal is to have a Dashboard to receive important generic information from th
 |     Spring boot    |       React        | MySQL Workbench |
 |[Documentation](https://spring.io/guides)| [Documentation](https://www.php.net/manual/en)| [Documentation](https://www.mysql.com/products/workbench/)|
 
-...[^1]
-...[^2]
-...[^3]
 ## Services
 This project have to contain 4 Services and 9 Widgets :
 
-* <b>League of Legends</b>
-  * Widget (...)
-  * Widget (...)
-* <b>World of Warcraft</b>
-  * Widget (...)
-  * Widget (...)
-* <b>Steam</b>
-  * Widget (...)
-  * Widget (...)
-* <b>Twitch</b>
-  * Widget (...)
-  * Widget (...)
-  
-<b><em>+1 Widget BONUS</em></b>
+#### League of Legends[^1]
+<ul>
+  <li><b>Widget <em>(Champions)</em>:</b> get all champions and informations about them from the game League of Legends.</li>
+  <li><b>Widget <em>(Profil)</em>:</b> get the profil of a League of Legends's user.</li>
+  <li><b>Widget <em>(In Game)</em>:</b> get all of informations of a game running in League of Legends by Profil name.</li>
+</ul>
+
+#### Raider IO[^2]
+<ul>
+  <li><b>Widget <em>(Character)</em>:</b> get character information from the game World of Warcraft.</li>
+  <li><b>Widget <em>(Guild)</em>:</b> get all members from a guild and their character's informations from the game World of Warcraft.</li>
+</ul>
+
+#### Rest Countries[^3]
+<ul>
+  <li><b>Widget <em>(Capital)</em>:</b> get the capital from a country.</li>
+  <li><b>Widget <em>(Region)</em>:</b> get all of countries from a region.</li>
+</ul>
+
+#### Free Dictionary[^4]
+<ul>
+  <li><b>Widget <em>(Phonetic)</em>:</b> get phonetic and audio from a word.</li>
+  <li><b>Widget <em>(Definition)</em>:</b> get definition(s) and some examples from a word.</li>
+</ul>
+
+## Swagger
+
+To access to the swagger and get all documentation from the Backend's API, once you start the back, you can go on this url:
+
+```
+http://localhost:8080/swagger-ui/
+```
 
 ## Sources
-
-*Laravel Doc*
-[^1]:[...](https://laravel.com/docs/9.x/eloquent)
-[^2]:[...](https://laravel.com/docs/9.x/migrations)
-[^3]:[...](https://laravel.com/docs/9.x/controllers)
+Links of APIs used :
+[^1]:[Developer Riotgames](https://developer.riotgames.com/docs/portal#_getting-started)
+[^2]:[RaiderIo Developer API](https://raider.io/api)
+[^3]:[Rest Countries](https://restcountries.com/)
+[^4]:[Dictionary Api Dev](https://dictionaryapi.dev/)
 

@@ -1,0 +1,36 @@
+.bannière-company {
+  img {
+    height: 515;
+    width: 100%;
+  }
+}
+
+.blockpage {
+  padding: 0px 70px;
+
+  h2 {
+    font-family: $font-2;
+  }
+
+  .bloc-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+
+  .valeur {
+    margin-top: 100px;
+  }
+  .equipe {
+    display: flex;
+    justify-content: space-between;
+    .salarie {
+      text-align: center;
+      img {
+        border-radius: 20%;
+        width: 240px;
+        height: 70%;
+      }
+    }
+  }
+}

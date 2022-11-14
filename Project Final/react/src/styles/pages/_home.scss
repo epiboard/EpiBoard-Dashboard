@@ -1,0 +1,244 @@
+.home {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 60px 1fr 374px;
+  overflow: hidden;
+  margin: 58px auto 50px;
+  position: relative;
+
+  @media screen and(max-width: 990px) {
+    grid-template-columns: 60px 1fr;
+    margin: 58px 20px 50px;
+  }
+
+  @media screen and(max-width: 590px) {
+    grid-template-columns: 1fr;
+    margin: 58px 8px 50px;
+  }
+
+  .main {
+    .home-header {
+      margin: 0 auto 12px;
+      text-align: center;
+
+      .connection-form {
+        background: $color-4;
+        border-radius: 20px;
+        padding: 20px;
+
+        ul {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 18px;
+
+          li {
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 12px 14px;
+            transition: 0.2s;
+            margin: 0 8px;
+          }
+          .active-btn {
+            background: $color-1;
+
+            &:hover {
+              background: $color-2;
+            }
+          }
+          li:not(.active-btn) {
+            &:hover {
+              transform: translateX(3px);
+            }
+          }
+        }
+        form {
+          input {
+            padding: 10px 14px;
+            margin: 0;
+            font-size: 1.2rem;
+            font-family: $font-2;
+            border-radius: 20px;
+
+            &:focus {
+              box-shadow: 0 0 3px rgba(51, 51, 51, 0.2);
+            }
+          }
+          input[type="submit"] {
+            padding: 14px 14px;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+  .right-side {
+    position: relative;
+    width: 100%;
+    margin: 0px 0 0 14px;
+
+    @media screen and(max-width: 990px) {
+      display: none;
+    }
+
+    .right-side-container {
+      position: fixed;
+    }
+  }
+}
+
+.contentservice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.sideservice {
+  display: flex;
+  gap: 50px;
+  justify-content: start;
+  flex-direction: column;
+  background-color: red;
+  width: 20%;
+  height: 50vh;
+  padding: 20px;
+  position: sticky;
+
+  .main {
+    display: none;
+    position: relative;
+  }
+}
+
+.mainservice {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .main {
+    background-color: white;
+  }
+
+  .side {
+    display: none;
+  }
+}
+
+.countries {
+  text-align: center;
+
+  .radio-container {
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    background: $color-3;
+    border-radius: 20px;
+    padding: 10px;
+    color: $white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.452);
+
+    input {
+      transform: translateY(1px);
+    }
+
+    label {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 1.3rem;
+    border: 3px solid $color-1;
+    outline: none;
+    transition: 0.4s;
+    text-align: center;
+    width: 400px;
+    margin-bottom: 20px;
+
+    &:focus {
+      background: $color-1;
+      border-radius: 4px;
+      color: $white;
+    }
+  }
+
+  button {
+    margin: 0 auto 20px;
+    background: none;
+    border: 2px solid $color-1;
+    padding: 4px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background: $color-1;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.card {
+  position: relative;
+  height: 100px;
+  width: 160px;
+  border-radius: 4px;
+  transition: 0.3s;
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    z-index: 2;
+  }
+
+  &:hover .infos {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  .infos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: $white;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: 0.3s;
+  }
+  img {
+    height: 100px;
+    width: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.addWidget {
+  background-color: blue;
+}
+.shop {
+  background-color: aqua;
+}
+.services {
+  background-color: #ff7b77;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

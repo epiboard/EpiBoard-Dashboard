@@ -1,0 +1,66 @@
+.footer {
+  margin-top: 100px;
+
+  .bloc-1 {
+    display: flex;
+    h2 {
+      font-family: $font-2;
+    }
+
+    .newsletter {
+      height: 448px;
+      width: 683px;
+      border: 1px solid $color-1;
+      color: $color-1;
+      p {
+        font-family: $font-1;
+        padding-left: 60px;
+        padding-right: 50px;
+        text-align: justify;
+        font-size: 27px;
+      }
+      form {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        .email {
+          border: 1px solid $color-1;
+          border: 0px 0px 0px 10px;
+          border-radius: 30;
+          padding-left: 70px;
+          height: 40px;
+        }
+      }
+    }
+    .reseaux {
+      text-align: center;
+      height: 448px;
+      width: 683px;
+      border: 1px solid $color-1;
+      background-color: $color-1;
+      color: $white;
+
+      h2 {
+        color: $white;
+      }
+      .logo-reseaux {
+        display: flex;
+        justify-content: space-around;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+  .liens {
+    display: flex;
+    justify-content: space-between;
+  }
+  .partenaire {
+    h2 {
+      text-align: center;
+    }
+  }
+}
